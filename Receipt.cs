@@ -67,7 +67,7 @@ namespace Receipt
             set { _payment_datetime = Validation.ValidateDate(value); }
         }
 
-        public string print()
+        public override String ToString()
         {
             return ($"ID: {ID} \nreceipt name: {receipt_name} \nreceipt iban: {receipt_iban} \nbank: {bank} \npayment type: {payment_type} " +
                 $"\namount: {amount} \npayment datetime: {payment_datetime}\n");

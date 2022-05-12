@@ -26,7 +26,7 @@ namespace Receipt
                 {
                     Console.Write("Enter the path of file: ");
                     string path = Console.ReadLine();
-                    b.Read_txt(path);
+                    b.Read_txt( path);
 
                 }
                 else if (response == "2")
